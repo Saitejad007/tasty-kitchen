@@ -1,0 +1,80 @@
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 24px;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 32px;
+  width: 39px;
+}
+
+.logo-description {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f7931e;
+  padding: 8px;
+}
+
+.menu {
+  width: 24px;
+  height: 24px;
+}
+
+.close {
+  height: 24px;
+  width: 24px;
+}
+
+.show-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 24px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #f7931e;
+  padding-right: 24px;
+  text-decoration: none;
+}
+
+.logout-button {
+  background: #f7931e;
+  border-radius: 8px;
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+}

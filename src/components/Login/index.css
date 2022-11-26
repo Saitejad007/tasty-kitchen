@@ -1,0 +1,169 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.website-logo {
+  align-self: flex-end;
+  height: 387px;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  scale: 1;
+}
+
+.login {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0f172a;
+  transform: translateY(-24px);
+  padding-left: 10%;
+  margin: 0;
+}
+
+.form-mobile-view {
+  width: 80%;
+  padding: 20px 0;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+
+.input {
+  background-color: #e2e8f0;
+  border-radius: 2px;
+  height: 40px;
+  border: none;
+  color: #171f46;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 16px;
+}
+
+.label {
+  font-family: 'DM Sans';
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.login-button {
+  background: #f7931e;
+  border-radius: 8px;
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  height: 40px;
+}
+
+.error-msg {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ef4444;
+  margin: 8px 0;
+}
+
+.desktop-view-form-container {
+  display: none;
+}
+
+.landing-image {
+  display: none;
+}
+
+.desktop-logo-container {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .login-page {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .desktop-view-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-mobile-view {
+    display: none;
+  }
+
+  .form {
+    width: 60%;
+    box-shadow: 0px 8px 22px 3px rgba(150, 150, 150, 0.24);
+    padding: 48px;
+    border-radius: 8px;
+  }
+
+  .desktop-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-description {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    color: #f7931e;
+  }
+
+  .login-desktop {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #0f172a;
+  }
+
+  .landing-image {
+    display: block;
+    width: auto;
+    max-width: 40vw;
+    height: 100vh;
+  }
+}
