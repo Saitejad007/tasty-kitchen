@@ -6,13 +6,13 @@
   background: #ffffff;
 }
 
-.logo-container {
+.logo-container-mobile {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.website-logo {
+.website-login-image-mobile {
   align-self: flex-end;
   height: 387px;
   padding: 0;
@@ -21,7 +21,14 @@
   scale: 1;
 }
 
-.login {
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title-mobile {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -33,7 +40,7 @@
   margin: 0;
 }
 
-.form-mobile-view {
+.form {
   width: 80%;
   padding: 20px 0;
 }
@@ -99,7 +106,7 @@
   display: none;
 }
 
-.landing-image {
+.website-login-image-desktop {
   display: none;
 }
 
@@ -113,26 +120,33 @@
     height: 100vh;
   }
 
-  .logo-container {
+  .logo-container-mobile {
     display: none;
   }
 
-  .desktop-view-form-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .form-mobile-view {
+  .login-title-mobile {
     display: none;
   }
 
   .form {
-    width: 60%;
+    width: 50%;
     box-shadow: 0px 8px 22px 3px rgba(150, 150, 150, 0.24);
     padding: 48px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-title-desktop {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0f172a;
   }
 
   .desktop-logo-container {
@@ -151,16 +165,7 @@
     color: #f7931e;
   }
 
-  .login-desktop {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
-    color: #0f172a;
-  }
-
-  .landing-image {
+  .website-login-image-desktop {
     display: block;
     width: auto;
     max-width: 40vw;
