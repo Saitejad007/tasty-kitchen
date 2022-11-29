@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import Login from './components/Login/Login'
 import Home from './components/Home/Home'
 import Cart from './components/Cart/Cart'
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 
 // const sortByOptions = [
 //   {
@@ -20,9 +21,9 @@ import Cart from './components/Cart/Cart'
 const App = () => (
   <div>
     <Switch>
-      <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
-      <Route exact path="/cart" component={Cart} />
+      <ProtectedRoute exact path="/" component={Home} />
+      <ProtectedRoute exact path="/cart" component={Cart} />
     </Switch>
   </div>
 )
