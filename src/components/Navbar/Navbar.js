@@ -22,7 +22,7 @@ class Navbar extends Component {
 
   render() {
     const {menuStatus} = this.state
-    console.log(menuStatus)
+    // console.log(menuStatus)
     return (
       <nav>
         <div className="mobile-view-navbar">

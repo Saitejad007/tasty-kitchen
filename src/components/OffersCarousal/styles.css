@@ -1,0 +1,12 @@
+.slick-slide img {
+  margin: auto;
+}
+
+.carousal-img {
+  /* width: 100vw; */
+  min-height: 200px;
+  width: 100%;
+  max-height: 30vh;
+  min-width: 380px;
+  /* max-width: 1100px; */
+}
